@@ -39,13 +39,16 @@ export const SignUp = () => {
             value='Create account'
             className='p-4 bg-black text-white cursor-pointer w-full rounded-lg'
           />
-          <div>
-            <p className='text-gray-300 font-light'>
+          <div className='flex justify-between text-gray-200 cursor-pointer font-bold w-full'>
+            <p className='font-light'>
               Already have an account?{" "}
               <Link to='/login' className='font-bold cursor-pointer'>
                 Log in
               </Link>
             </p>
+            <Link to='/' className='cursor-pointer'>
+              Back to home
+            </Link>
           </div>
         </form>
       </div>
