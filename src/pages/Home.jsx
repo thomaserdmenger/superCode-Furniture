@@ -122,8 +122,8 @@ export const Home = () => {
           </div>
         </section>
         <footer className='pt-10 relative'>
-          <section className='grid grid-cols-3 mt-10 mb-20 px-40'>
-            <div className='flex flex-col gap-2'>
+          <section className='grid mt-10 mb-20 px-4 w-5/6 m-auto lg:justify-center lg:px-4 lg:grid-cols-3'>
+            <div className='flex flex-col gap-2 mb-8 lg:mb-0'>
               <h3 className='uppercase font-bold text-2xl mb-2'>Our Company</h3>
               <Link to='/' className='font-bold text-2xl cursor-pointer'>
                 About us
@@ -135,7 +135,7 @@ export const Home = () => {
                 Contact us
               </Link>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 mb-8 lg:mb-0'>
               <h3 className='uppercase font-bold text-2xl mb-2'>Learn More</h3>
               <Link to='/' className='font-bold text-2xl cursor-pointer'>
                 How it works
@@ -150,7 +150,7 @@ export const Home = () => {
                 Privacy Policy
               </Link>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 w-full'>
               <h3 className='uppercase text-2xl font-bold mb-2'>Subscribe</h3>
               <form className='flex items-start relative'>
                 <input
@@ -168,7 +168,7 @@ export const Home = () => {
               </form>
             </div>
           </section>
-          <p className='bg-black text-white py-4 font-bold text-center'>
+          <p className='bg-black text-white py-4 font-bold text-center px-6'>
             By using this website you accept our Terms and use and Private
             Policy
           </p>
