@@ -79,7 +79,7 @@ export const Home = () => {
             />
           </Link>
         </section>
-        <section className='grid grid-cols-2 bg-[#A4A4A3] px-24 py-12 '>
+        <section className='grid lg:grid-cols-2 lg:gap-4 bg-[#A4A4A3] px-24 py-12 '>
           <div className='flex flex-col'>
             <h2 className='font-bold text-neutral-50 text-5xl mb-6'>
               Drop a Message
@@ -117,7 +117,7 @@ export const Home = () => {
                 className='p-4 rounded-lg placeholder:text-gray-400 text-gray-400 mb-6 h-40'></textarea>
             </form>
           </div>
-          <div className='flex justify-end'>
+          <div className='flex hidden justify-self-end lg:block'>
             <img src='/images/phone.png' alt='' />
           </div>
         </section>
