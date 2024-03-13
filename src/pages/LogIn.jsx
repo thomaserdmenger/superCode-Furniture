@@ -4,10 +4,10 @@ export const LogIn = () => {
   return (
     <main className='flex flex-col justify-center items-center min-h-screen'>
       <div className='flex flex-col w-full items-center'>
-        <form className='flex flex-col items-start w-6/12 gap-4 font-bold'>
+        <form className='flex flex-col items-start gap-4 px-6 w-full max-w-2xl font-bold ld:w-6/12'>
           <h1 className='text-5xl mb-4'>Log in</h1>
 
-          <div className='flex w-full gap-4'>
+          <div className='flex flex-col w-full gap-4 md:flex-row'>
             <input
               type='text'
               name='firstname'

@@ -6,7 +6,7 @@ export const Chair = ({ content, price, image, marginTop, marginBottom }) => {
         alt='Chair'
         className={`max-h-full mt-${marginTop} mb-${marginBottom}`}
       />
-      <p className='w-2/5 font-bold'>{content}</p>
+      <p className='md:w-2/5 mb-2 font-bold'>{content}</p>
       <p className='font-bold'>{price}</p>
     </article>
   )

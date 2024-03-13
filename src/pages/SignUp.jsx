@@ -4,7 +4,7 @@ export const SignUp = () => {
   return (
     <main className='flex flex-col justify-center items-center min-h-screen'>
       <div className='flex flex-col w-full items-center'>
-        <form className='flex flex-col items-start w-6/12 gap-4 font-bold'>
+        <form className='flex flex-col items-start gap-4 px-6 w-full max-w-2xl font-bold ld:w-6/12'>
           <h1 className='text-5xl mb-4'>Sign up</h1>
           <input
             type='email'
@@ -39,7 +39,7 @@ export const SignUp = () => {
             value='Create account'
             className='p-4 bg-black text-white cursor-pointer w-full rounded-lg text-lg'
           />
-          <div className='flex justify-between text-gray-200 cursor-pointer font-bold w-full'>
+          <div className='flex flex-col items-center justify-between text-gray-200 cursor-pointer font-bold w-full md:flex-row'>
             <p className='font-light'>
               Already have an account?
               <Link to='/login' className='font-bold cursor-pointer ml-1'>

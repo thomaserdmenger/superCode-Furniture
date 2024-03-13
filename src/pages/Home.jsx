@@ -7,11 +7,11 @@ export const Home = () => {
       <header
         className='flex flex-col bg-hero-image bg-cover bg-center bg-no-repeat text-neutral-50'
         id='hero'>
-        <section className='flex justify-between py-7 px-5 gap-x-4 mb-56'>
+        <section className='flex flex-col items-center justify-between py-7 px-5 gap-x-4 gap-y-1 mb-56 sm:flex-row sm:gap-y-0'>
           <Link className='cursor-pointer font-bold text-lg uppercase' to='/'>
             Home_H
           </Link>
-          <nav className='flex gap-x-4 items-center'>
+          <nav className='flex flex-col gap-x-4 gap-y-3 items-center sm:flex-row sm:gap-y-0'>
             <div className='flex gap-x-4'>
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/'>About us</NavLink>
@@ -32,13 +32,13 @@ export const Home = () => {
             </div>
           </nav>
         </section>
-        <h1 className='text-center text-[80px] mb-96'>
+        <h1 className='text-center text-4xl mb-96 px-4 sm:text-7xl sm:px-8'>
           Everyone Loves To Welcome A Good Furniture
         </h1>
       </header>
       <main>
         <section>
-          <div className='grid grid-cols-4 px-24 pt-24 gap-4 mb-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 px-5 sm:px-24 pt-24 gap-4 mb-10'>
             <article className='flex flex-col gap-4 p-4'>
               <h2 className='font-bold text-3xl'>Who we are</h2>
               <p className='text-lg'>
@@ -79,7 +79,7 @@ export const Home = () => {
             />
           </Link>
         </section>
-        <section className='grid grid-cols-2 bg-[#A4A4A3] px-24 py-12 '>
+        <section className='grid lg:grid-cols-2 lg:gap-4 bg-[#A4A4A3] px-24 py-12 '>
           <div className='flex flex-col'>
             <h2 className='font-bold text-neutral-50 text-5xl mb-6'>
               Drop a Message
@@ -117,13 +117,13 @@ export const Home = () => {
                 className='p-4 rounded-lg placeholder:text-gray-400 text-gray-400 mb-6 h-40'></textarea>
             </form>
           </div>
-          <div className='flex justify-end'>
+          <div className='flex hidden justify-self-end lg:block'>
             <img src='/images/phone.png' alt='' />
           </div>
         </section>
         <footer className='pt-10 relative'>
-          <section className='grid grid-cols-3 mt-10 mb-20 px-40'>
-            <div className='flex flex-col gap-2'>
+          <section className='grid mt-10 mb-20 px-4 w-5/6 m-auto lg:justify-center lg:px-4 lg:grid-cols-3'>
+            <div className='flex flex-col gap-2 mb-8 lg:mb-0'>
               <h3 className='uppercase font-bold text-2xl mb-2'>Our Company</h3>
               <Link to='/' className='font-bold text-2xl cursor-pointer'>
                 About us
@@ -135,7 +135,7 @@ export const Home = () => {
                 Contact us
               </Link>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 mb-8 lg:mb-0'>
               <h3 className='uppercase font-bold text-2xl mb-2'>Learn More</h3>
               <Link to='/' className='font-bold text-2xl cursor-pointer'>
                 How it works
@@ -150,7 +150,7 @@ export const Home = () => {
                 Privacy Policy
               </Link>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 w-full'>
               <h3 className='uppercase text-2xl font-bold mb-2'>Subscribe</h3>
               <form className='flex items-start relative'>
                 <input
@@ -168,7 +168,7 @@ export const Home = () => {
               </form>
             </div>
           </section>
-          <p className='bg-black text-white py-4 font-bold text-center'>
+          <p className='bg-black text-white py-4 font-bold text-center px-6'>
             By using this website you accept our Terms and use and Private
             Policy
           </p>
