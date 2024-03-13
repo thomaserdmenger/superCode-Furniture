@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom"
+import { Chair } from "../components/Chair"
 
 export const Home = () => {
   return (
@@ -33,6 +34,50 @@ export const Home = () => {
           Everyone Loves To Welcome A Good Furniture
         </h1>
       </header>
+      <main>
+        <section>
+          <div className='grid grid-cols-4 px-24 pt-24 gap-4 mb-10'>
+            <article className='flex flex-col gap-4 p-4'>
+              <h2 className='font-bold text-3xl'>Who we are</h2>
+              <p className='text-lg'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ullamcorper accumsan turpis quis quis at. Nec, nisi dis duis
+                urna, elit justo, euismod. Ultricies fermentum nibh in ut quis
+                lacus sollicitudin proin. Eu sit enim ullamcorper nisl id est. A
+                pulvinar ut fringilla vulputate feugiat lobortis phasellus
+                mattis dignissim. Dapibus sed quam venenatis platea. Et
+                pharetra, convallis nec volutpat. Sed id et sed diam. Diam leo
+                ipsum, urna in lorem amet euismod.
+              </p>
+            </article>
+            <Chair
+              content='Light brown chair with wooden legs'
+              price='$100'
+              image='/images/chair-1.png'
+              marginBottom={10}
+            />
+            <Chair
+              content='Black chair with long legs'
+              price='$500'
+              image='/images/chair-2.png'
+              marginTop={4}
+            />
+            <Chair
+              content='White chair with spiral design legs'
+              price='$1000'
+              image='/images/chair-3.png'
+              marginBottom={10}
+            />
+          </div>
+          <Link to='/'>
+            <img
+              src='/images/arrow.png'
+              alt='Arrow'
+              className='bg-[#A4A4A3] rounded-full p-0.5 ml-28 mb-10'
+            />
+          </Link>
+        </section>
+      </main>
     </>
   )
 }
