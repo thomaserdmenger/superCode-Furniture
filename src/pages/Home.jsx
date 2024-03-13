@@ -4,7 +4,9 @@ import { Chair } from "../components/Chair"
 export const Home = () => {
   return (
     <>
-      <header className='flex flex-col bg-hero-image bg-cover bg-center bg-no-repeat text-neutral-50'>
+      <header
+        className='flex flex-col bg-hero-image bg-cover bg-center bg-no-repeat text-neutral-50'
+        id='hero'>
         <section className='flex justify-between py-7 px-5 gap-x-4 mb-56'>
           <Link className='cursor-pointer font-bold text-lg uppercase' to='/'>
             Home_H
@@ -119,8 +121,8 @@ export const Home = () => {
             <img src='/images/phone.png' alt='' />
           </div>
         </section>
-        <footer className='pt-10 '>
-          <section className='grid grid-cols-3 mb-20 px-40'>
+        <footer className='pt-10 relative'>
+          <section className='grid grid-cols-3 mt-10 mb-20 px-40'>
             <div className='flex flex-col gap-2'>
               <h3 className='uppercase font-bold text-2xl mb-2'>Our Company</h3>
               <Link to='/' className='font-bold text-2xl cursor-pointer'>
@@ -170,6 +172,13 @@ export const Home = () => {
             By using this website you accept our Terms and use and Private
             Policy
           </p>
+          <a href='#hero' className='cursor-pointer'>
+            <img
+              src='../../public/images/arrow-2.png'
+              className='bg-black absolute bottom-24 right-6 px-2 py-2.5'
+              alt='Arrow'
+            />
+          </a>
         </footer>
       </main>
     </>
