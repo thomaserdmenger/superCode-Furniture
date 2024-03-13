@@ -6,7 +6,7 @@ export const Home = () => {
     <>
       <header className='flex flex-col bg-hero-image bg-cover bg-center bg-no-repeat text-neutral-50'>
         <section className='flex justify-between py-7 px-5 gap-x-4 mb-56'>
-          <Link className='cursor-pointer font-bold text-lg' to='/'>
+          <Link className='cursor-pointer font-bold text-lg uppercase' to='/'>
             Home_H
           </Link>
           <nav className='flex gap-x-4 items-center'>
@@ -76,6 +76,48 @@ export const Home = () => {
               className='bg-[#A4A4A3] rounded-full p-0.5 ml-28 mb-10'
             />
           </Link>
+        </section>
+        <section className='grid grid-cols-2 bg-[#A4A4A3] px-24 py-12 '>
+          <div className='flex flex-col'>
+            <h2 className='font-bold text-neutral-50 text-5xl mb-6'>
+              Drop a Message
+            </h2>
+            <form className='flex flex-col'>
+              <label htmlFor='name' className='text-neutral-50 mb-1 text-2xl'>
+                Name
+              </label>
+              <input
+                type='text'
+                name='name'
+                id='name'
+                placeholder='Input your name'
+                className='p-4 rounded-lg placeholder:text-gray-400 text-gray-400 mb-6'
+              />
+              <label htmlFor='tel' className='text-neutral-50 mb-1 text-2xl'>
+                Mobile no.
+              </label>
+              <input
+                type='text'
+                name='tel'
+                id='tel'
+                placeholder='Input yout mobile number'
+                className='p-4 rounded-lg placeholder:text-gray-400 text-gray-400 mb-6'
+              />
+              <label
+                htmlFor='message'
+                className='text-neutral-50 mb-1 text-2xl'>
+                Message
+              </label>
+              <textarea
+                name='message'
+                id='message'
+                placeholder='Input your message'
+                className='p-4 rounded-lg placeholder:text-gray-400 text-gray-400 mb-6 h-40'></textarea>
+            </form>
+          </div>
+          <div className='flex justify-end'>
+            <img src='/images/phone.png' alt='' />
+          </div>
         </section>
       </main>
     </>
