@@ -38,7 +38,7 @@ export const Home = () => {
       </header>
       <main>
         <section>
-          <div className='grid grid-cols-4 px-24 pt-24 gap-4 mb-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 px-5 sm:px-24 pt-24 gap-4 mb-10'>
             <article className='flex flex-col gap-4 p-4'>
               <h2 className='font-bold text-3xl'>Who we are</h2>
               <p className='text-lg'>
