@@ -7,11 +7,11 @@ export const Home = () => {
       <header
         className='flex flex-col bg-hero-image bg-cover bg-center bg-no-repeat text-neutral-50'
         id='hero'>
-        <section className='flex justify-between py-7 px-5 gap-x-4 mb-56'>
+        <section className='flex flex-col items-center justify-between py-7 px-5 gap-x-4 gap-y-1 mb-56 sm:flex-row sm:gap-y-0'>
           <Link className='cursor-pointer font-bold text-lg uppercase' to='/'>
             Home_H
           </Link>
-          <nav className='flex gap-x-4 items-center'>
+          <nav className='flex flex-col gap-x-4 gap-y-3 items-center sm:flex-row sm:gap-y-0'>
             <div className='flex gap-x-4'>
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/'>About us</NavLink>
@@ -32,7 +32,7 @@ export const Home = () => {
             </div>
           </nav>
         </section>
-        <h1 className='text-center text-[80px] mb-96'>
+        <h1 className='text-center text-4xl mb-96 px-4 sm:text-7xl sm:px-8'>
           Everyone Loves To Welcome A Good Furniture
         </h1>
       </header>
