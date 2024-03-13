@@ -119,6 +119,58 @@ export const Home = () => {
             <img src='/images/phone.png' alt='' />
           </div>
         </section>
+        <footer className='pt-10 '>
+          <section className='grid grid-cols-3 mb-20 px-40'>
+            <div className='flex flex-col gap-2'>
+              <h3 className='uppercase font-bold text-2xl mb-2'>Our Company</h3>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                About us
+              </Link>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                Become a Partner
+              </Link>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                Contact us
+              </Link>
+            </div>
+            <div className='flex flex-col gap-2'>
+              <h3 className='uppercase font-bold text-2xl mb-2'>Learn More</h3>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                How it works
+              </Link>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                FAQs
+              </Link>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                Terms and Conditions
+              </Link>
+              <Link to='/' className='font-bold text-2xl cursor-pointer'>
+                Privacy Policy
+              </Link>
+            </div>
+            <div className='flex flex-col gap-2'>
+              <h3 className='uppercase text-2xl font-bold mb-2'>Subscribe</h3>
+              <form className='flex items-start relative'>
+                <input
+                  type='email'
+                  name='email'
+                  id='email'
+                  placeholder='Input your email address'
+                  className='p-4 rounded-lg placeholder:text-gray-400 text-gray-400 mb-6 bg-gray-200 w-full'
+                />
+                <input
+                  type='submit'
+                  value='Send'
+                  className='uppercase font-bold text-2xl text-white bg-black absolute right-0 h-14 rounded-lg px-8'
+                />
+              </form>
+            </div>
+          </section>
+          <p className='bg-black text-white py-4 font-bold text-center'>
+            By using this website you accept our Terms and use and Private
+            Policy
+          </p>
+        </footer>
       </main>
     </>
   )
